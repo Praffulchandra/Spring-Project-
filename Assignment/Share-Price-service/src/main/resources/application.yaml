@@ -1,0 +1,18 @@
+server:
+  port: 9090
+
+
+spring:
+  application:
+    name: Share-Market-Service
+
+eureka:
+  instance:
+    hostname: localhost
+
+
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultzone: http://localhost:8761/eureka/

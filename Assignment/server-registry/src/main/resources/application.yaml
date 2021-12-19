@@ -1,0 +1,15 @@
+server:
+  port: 8761
+
+
+spring:
+  application:
+    name: server-registry
+
+eureka:
+  instance:
+    hostname: localhost
+#we have used the below line so that this doesn't register itself on eureka server
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
